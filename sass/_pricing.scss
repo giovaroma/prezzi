@@ -1,0 +1,131 @@
+
+
+//////////////////////////Breadkpoints Material Design
+
+//layout-xs	width < 600px
+//layout-gt-xs	width >= 600px
+//layout-sm	600px <= width < 960px
+//layout-gt-sm	width >= 960px
+//layout-md	960px <= width < 1280px
+//layout-gt-md	width >= 1280px
+//layout-lg	1280px <= width < 1920px
+//layout-gt-lg	width >= 1920px
+//layout-xl	width >= 1920px
+
+//////////////////////////Base Style and Typography
+html {
+  font-size: 16px; //REM
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  background-color: $bg-color-light;
+}
+
+h1 {
+  font-size: 1.5em; //24px
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+/////////////////////////Placeholders
+%accent-color {
+  background-color: $accent;
+}
+
+
+/////////////////////////Containers and Layout
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: 600px;
+  background-color:tomato;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+///////////////////////////Buttons
+.button-primary {
+  @extend %accent-color;
+  font-size: 0.875em;
+  width:100%;
+  height: 36px;
+  border:none;
+  line-height: 1.5;
+  padding: .5em;
+  vertical-align: middle;
+  transition: .2s ease-out;
+  cursor:pointer;
+
+  &:hover {
+    background-color: tomato;
+  }
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: all .3s ease-out;
+
+    // Waves Colors
+  &.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+
+/////////////////////Pricing
+
+  .circle {
+    position: relative;
+    margin: 2em 0;
+    width:90px;
+    height:90px;
+    border-radius: 50% 50%;
+    @extend %accent-color;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 auto;
+    line-height: 1;
+
+    .pricing-cost {
+      font-size:2.75em;
+      line-height: 1;
+      span {
+        font-size:1.125rem;
+      }
+    }
+
+  }
