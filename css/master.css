@@ -198,23 +198,18 @@ h2 {
 p {
   font-size: 0.875em; }
 
-.button-primary, .circle {
+.button-primary {
   background-color: #2196f3; }
+
+.container {
+  background-color: #fafafa;
+  min-height: 500px;
+  font-size: 16px;
+  display: flex;
+  border: solid 1px tomato; }
 
 .container-fluid {
   width: 100%; }
-
-.container {
-  max-width: 600px;
-  background-color: tomato;
-  margin: 0 auto; }
-
-.row {
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
 
 .button-primary {
   font-size: 0.875em;
@@ -247,20 +242,66 @@ p {
     background-color: rgba(255, 255, 255, 0.45); }
 
 .circle {
+  width: 120px;
+  height: 120px;
+  background-color: #2196f3;
+  border-radius: 60px;
+  margin: auto;
+  display: flex; }
+
+main {
   position: relative;
-  margin: 2em 0;
-  width: 90px;
-  height: 90px;
-  border-radius: 50% 50%;
+  margin: auto;
   color: white;
-  font-weight: bold;
+  text-align: center; }
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.15;
+  font-weight: normal; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 44px;
+  margin-left: 10px;
+  line-height: 1.25;
+  font-weight: bold; }
+
+h2 span {
+  position: absolute;
+  font-size: 18px;
+  top: 26px;
+  left: 0; }
+
+.container {
+  font-size: 16px;
+  padding-top: 50px;
+  width: 600px;
+  border: solid 1px tomato;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .container input[type="radio"]:checked + label:nth-child(0) {
+    background: red; }
+
+input[type="radio"] + label {
+  content: '\a0';
+  color: white;
+  width: 180px;
+  height: 36px;
+  border-radius: 4px 0 0 4px;
+  background: tomato;
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex: 0 1 auto;
-  line-height: 1; }
-  .circle .pricing-cost {
-    font-size: 2.75em;
-    line-height: 1; }
-    .circle .pricing-cost span {
-      font-size: 1.125rem; }
+  justify-content: center; }
+
+input[type="radio"]:checked + label {
+  background: blue; }
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
