@@ -208,8 +208,7 @@ p {
   font-size: 16px;
   min-width: 360px;
   max-width: 600px;
-  width: 100%;
-  border: solid 1px tomato; }
+  width: 100%; }
 
 .row {
   width: 100%; }
@@ -223,18 +222,18 @@ p {
   justify-content: center; }
 
 .button-primary {
-  font-size: 0.875em;
-  width: 100%;
+  font-size: 1.25em;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
   height: 36px;
   border: none;
   line-height: 1.5;
-  padding: .5em;
   vertical-align: middle;
   transition: .2s ease-out;
   cursor: pointer;
-  text-align: center; }
-  .button-primary:hover {
-    background-color: tomato; }
+  text-align: center;
+  border-radius: 5px; }
 
 .waves-effect {
   position: relative;
@@ -290,24 +289,27 @@ h2 span {
   left: 0; }
 
 .display-2 {
-  font-size: 1.125em;
-  width: 100%; }
+  font-size: 1em;
+  width: 100%;
+  margin-left: 16px;
+  line-height: 1.5; }
 
 .strawberry {
   color: #FF4081; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  width: 100%; }
 
 ul > li {
-  margin: 8px 0;
-  color: rgba(0, 0, 0, 0.54); }
+  color: rgba(0, 0, 0, 0.54);
+  padding: 3px 0; }
 
 ul > li span {
   color: #2196f3; }
 
 .features-list {
-  width: 100%; }
+  margin: auto; }
 
 input[type="radio"] + label {
   content: '\a0';
